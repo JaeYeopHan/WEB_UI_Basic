@@ -3,47 +3,50 @@
     <head>
         <title>Naver D2</title>
         <link rel="stylesheet" href="/css/style.css">
-
+        <script src="/js/main.js"></script>
     </head>
 
-    <body>
-        <div class="topbar">
-            <h1><a href="index.html">NAVER</a></h1>
-            <img class="logo" src="/img/d.png">
-            <ul>
-                <li>Hello world</li>
-                <li>D2 News</li>
-                <li>About D2</li>
-            </ul>
+<body>
+    <div class="topbar">
+        <h1><a href="index.html">NAVER</a></h1>
+        <img class="logo" src="/img/d.png">
+        <ul>
+            <li>Hello world</li>
+            <li>D2 News</li>
+            <li>About D2</li>
+        </ul>
+    </div>
+    <div class="searchBox">
+        <input class="search" type="text" placeholder=" D2에서 검색">
+        <a href="login.html"><button class="btn">login</button>
+        </a>
+        <a href="signin.html"><button class="btn">Sign in</button>
+        </a>
+    </div>
+
+    <form class="login-form" action='/index.html' method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Sign In</th>
+                </tr>
+                <tr>
+                    <td class="login-list">ID</td>
+                    <td><input type="text" placeholder="6자 이상"></td>
+                </tr>
+
+                <tr>
+                    <td class="login-list">Password</td>
+                    <td><input type="text" placeholder="숫자, 문자 혼합 6자 이상"></td>
+                </tr>
+         
+            </tbody>
+        </table>
+            <div class="btn-center-login">
+            <input class="btn-login" type="submit" name="완료" value="login" option="si">
+            <input class="btn-cancle" type="submit" name="취소" value="cancle">
         </div>
-        <div class="searchBox">
-            <input class="search" type="text" placeholder=" D2에서 검색">
-            <a href="login.html"><button class="btn">login</button>
-            </a>
-            <a href="signin.html"><button class="btn">Sign in</button>
-            </a>
-        </div>
+    </form>
 
-        <form class="login-form" action='/index.html'>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Sign In</th>
-                    </tr>
-                    <tr>
-                        <td class="login-list">ID</td>
-                        <td><input type="text" placeholder="6자 이상"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="login-list">Password</td>
-                        <td><input type="text" placeholder="숫자, 문자 혼합 6자 이상"></td>
-                    </tr>
-                    <input class="btn-login" type="submit" name="완료" value="login" option="si">
-                    <input class="btn-cancle" type="submit" name="취소" value="cancle">
-                </tbody>
-            </table>
-        </form>
-
-    </body>
+</body>
 </html>
