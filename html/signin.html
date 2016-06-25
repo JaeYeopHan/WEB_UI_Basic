@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naver D2</title>
+        <link rel="stylesheet" href="/css/style.css">
+
+    </head>
+
+<body>
+    <div class="topbar">
+        <h1><a href="index.html">NAVER</a></h1>
+        <img class="logo" src="/img/d.png">
+        <ul>
+            <li>Hello world</li>
+            <li>D2 News</li>
+            <li>About D2</li>
+        </ul>
+    </div>
+    <div class="searchBox">
+        <input class="search" type="text" placeholder=" D2에서 검색">
+        <a href="login.html"><button class="btn">login</button>
+        </a>
+        <a href="signin.html"><button class="btn">Sign in</button>
+        </a>
+    </div>
+    <form class="signin-form" action='/index.html'>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Sign In</th>
+                </tr>
+                <tr>
+                    <td class="signin-list">ID</td>
+                    <td><input type="text" placeholder="6자 이상"></td>
+                </tr>
+
+                <tr>
+                    <td class="signin-list">Password</td>
+                    <td><input type="text" placeholder="숫자, 문자 혼합 6자 이상"></td>
+                </tr>
+
+                <tr>
+                    <td class="signin-list">PW Confirm</td>
+                    <td><input type="text" placeholder="password를 확인"></td>
+                </tr>
+
+                <tr>
+                    <td class="signin-list">Gender</td>
+                    <td><input type="radio">male <input type="radio">female</td>
+                </tr>
+                <tr>
+                    <td class="signin-list">Favorite</td>
+                    <td>
+                       <p>
+                            <input type="checkbox">Java
+                            <input type="checkbox">JavaScript
+                            <input type="checkbox">C
+                            <input type="checkbox">C++
+                            <input type="checkbox">C#
+                            <input type="checkbox">Python
+                            <input type="checkbox">Go
+                            <input type="checkbox">Scala
+                        </p>
+                        <p>
+                            <input type="checkbox">Web Server
+                            <input type="checkbox">Web UI
+                            <input type="checkbox">Android
+                            <input type="checkbox">iOS
+                            <input type="checkbox">UX Designer
+                        </p>
+                    </td>
+                </tr>
+                <input class="btn-submit" type="submit" name="완료" value="완료" option="si">
+                <input class="btn-cancle" type="submit" name="취소" value="취소">
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>
